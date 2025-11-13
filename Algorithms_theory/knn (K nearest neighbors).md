@@ -30,7 +30,7 @@ before lets understand each distance metric :
 1. Euclidean distance : 
 
    Euclidean distance is defined as the straight-line distance between two points in a plane or space. You can think of it like the shortest path you would walk if you were to go directly from one point to another.
-   ![[Screenshot 2025-11-12 205857.png]]
+   ![Alt text](images/Screenshot 2025-11-12 205857.png) "")
 
 2. Manhatten Distance : 
 
