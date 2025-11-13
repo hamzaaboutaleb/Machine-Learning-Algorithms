@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "63362dd39d2890f2",
@@ -199,10 +200,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "a705b6609a1cb90b",
+  "active": "e0398526b57025fa",
   "lastOpenFiles": [
-    "Linear regression.md",
+    "images/659809c7531ac2845a272536_image4_11zon_d6c6352c9b.avif",
+    "images/Non confirmé 537539.crdownload",
+    "images/659809bf531ac2845a27252e_image21_11zon_b29a6e7ebf.avif",
+    "images/Non confirmé 888505.crdownload",
+    "659809bf531ac2845a27252e_image21_11zon_b29a6e7ebf.avif",
+    "Untitled.base",
+    "Pasted image 20251113152214.png",
     "knn (K nearest neighbors).md",
+    "Linear regression.md",
+    "image-url.md",
     "images/Screenshot 2025-11-12 210053.png",
     "images/Screenshot 2025-11-12 210453.png",
     "images/Screenshot 2025-11-12 210103.png",
