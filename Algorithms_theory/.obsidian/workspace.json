@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "knn (K nearest neighbors)"
             }
+          },
+          {
+            "id": "e0398526b57025fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linear regression.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Linear regression"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,10 +199,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "a1671c68aed3cb88",
+  "active": "a705b6609a1cb90b",
   "lastOpenFiles": [
-    "images/Screenshot 2025-11-12 210053.png",
+    "Linear regression.md",
     "knn (K nearest neighbors).md",
+    "images/Screenshot 2025-11-12 210053.png",
     "images/Screenshot 2025-11-12 210453.png",
     "images/Screenshot 2025-11-12 210103.png",
     "images/Screenshot 2025-11-12 205857.png"
