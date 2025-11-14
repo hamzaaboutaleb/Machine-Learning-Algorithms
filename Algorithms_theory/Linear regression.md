@@ -105,32 +105,84 @@ That means:
 Because the formula above only works **when you have a simple linear regression with one or a few features** — and when the relationship is **linear**.
 
 When the problem becomes more complex, that formula becomes **impossible or extremely expensive** to compute. <br>
-_1. For Multiple Linear Regression_
+__1. For Multiple Linear Regression__
 
-If you have many variables \( x_1, x_2, ..., x_n \), the closed-form solution becomes:
+If you have many variables (x₁, x₂, …, xₙ), the closed-form solution becomes:
 
-\[
-\boldsymbol{\beta} = (X^T X)^{-1} X^T y
-\]
+**β = (XᵀX)⁻¹ Xᵀy**
 
 But this requires computing a **matrix inverse**, which:
 
-- Is very expensive when the number of features is large.  
-- Can even be impossible if \( X^T X \) is **not invertible (singular matrix)**.
+- Is very expensive when the number of features is large.
+- Can even be impossible if (XᵀX) is **not invertible (singular matrix)**.
 
-
- __2. For Nonlinear Models or Neural Networks__
+__ 2. For Nonlinear Models or Neural Networks__
 
 If your model is not linear — e.g.,  
+**y = f(x; θ)**
 
-\[
-y = f(x; \theta)
-\]
-
-where \( f \) is a neural network —  
-there is **no closed-form formula** for the optimal parameters \( \theta \).  
+where *f* is a neural network —  
+there is **no closed-form formula** for the optimal parameters θ.  
 You can’t compute derivatives analytically like in the linear case.
 
 In those cases, **gradient descent** helps us find approximate optimal parameters by minimizing a cost function (like MSE).
 
+### Coefficient of determination (R2) : 
+___
+The **coefficient of determination**, denoted as R^2, measures **how well the regression line fits the data**.<br>
+it tells you what propostion of the variance in the dependent variable is explained by the independent variable(s).
+![[Pasted image 20251113200435.png]]
+its used to know the accuracy of the model . 
 
+**Formula**
+
+R² = 1 - (SS_res / SS_tot)
+
+Where:  
+- SS_res = Σ (y_i - ŷ_i)² → **Residual Sum of Squares** (model error)  
+- SS_tot = Σ (y_i - ȳ)² → **Total Sum of Squares** (total variation in data)
+
+---
+
+### **Intuitive Explanation**
+
+R² answers the question:  
+> “How well does my line explain the data compared to just using the average value?”
+
+- If all data points lie exactly on the line → **R² = 1** (perfect fit)  
+- If the line doesn’t explain anything → **R² = 0**  
+- If the line is worse than guessing the mean → **R² < 0**
+
+---
+
+### **Step-by-Step Example**
+
+| House | Actual (y) | Predicted (ŷ) |
+|:--|:--|:--|
+| 1 | 200 | 210 |
+| 2 | 250 | 240 |
+| 3 | 300 | 310 |
+
+1. Compute the mean of y:  
+
+ȳ = (200 + 250 + 300) / 3 = 250
+
+2. Compute total variation:  
+
+SS_tot = (200 - 250)² + (250 - 250)² + (300 - 250)² = 5000
+
+3. Compute model error:  
+
+SS_res = (200 - 210)² + (250 - 240)² + (300 - 310)² = 300
+
+4. Compute R²:  
+
+R² = 1 - (300 / 5000) = 0.94
+
+**Interpretation:**  
+The model explains **94% of the variance** in house prices — a very good fit.
+
+###  Adjusted R-squared
+Every time you add a new input variable, there will be an increase in the R square. Hence, it’s not wise to use the R square to decide whether to add a new input variable. To address this, a quantity known as "adjusted R-squared", which is a modified version of R-squared, is used. It’s more useful when you add irrelevant variables to the model. If you add variables that do not affect the target variable, the adjusted R-squared value will decrease and R-squared value will increase. Note that it is always lower than the R square.
+
+Usually, the value of R-squared and adjusted R-squared is somewhat the same. But, if you see a large difference, you need to check your independent variables again and see if there is any relationship between the target variable and the independent variable.
