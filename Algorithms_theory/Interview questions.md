@@ -169,3 +169,10 @@ There are several different ways to perform ANOVA tests, each suited for differe
 2. [****Two-Way ANOVA****](https://www.geeksforgeeks.org/maths/two-way-anova/)
 
 When conducting ANOVA tests we typically calculate an F-statistic and compare it to a critical value or use it to calculate a p-value.
+
+- What is the difference between descriptive and inferential statistics ? 
+---
+Descriptive Statistics aims to summarize and present the features of a given dataset , while inferential statistics leverages sample data to make estimates or test hypotheses about a larger population .<br>
+Descriptive statistics : 
+it describe the key aspects or characteristics of a dataset : 
+1. Measures of Central tendecy
