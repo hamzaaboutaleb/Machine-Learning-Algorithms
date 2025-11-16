@@ -173,6 +173,134 @@ When conducting ANOVA tests we typically calculate an F-statistic and compare it
 - What is the difference between descriptive and inferential statistics ? 
 ---
 Descriptive Statistics aims to summarize and present the features of a given dataset , while inferential statistics leverages sample data to make estimates or test hypotheses about a larger population .<br>
-Descriptive statistics : 
+__Descriptive statistics :__
 it describe the key aspects or characteristics of a dataset : 
-1. Measures of Central tendecy
+1. Measures of Central tendency : identify central or typical values in the dataset typically using the mean , median or mode .
+2. Measures of spread or dispersion : indicate the variability or spread around the central value , often quantified by the range , standard deviation or variance . 
+3. Data distribution : Categorized the data distribution as normal , skewed or otherwise and assists in visual presentation 
+4. Shape of data : describes wheter the data is symmetrical or skewed and the extent of that skewness 
+5. Correlation : Measures the relationship or lack thereof between two variables 
+6. Text statistics : summarizes verbal or written data using word frequencies , readabilities , etc. <br>
+__Inferential Statistics__ :
+in constrast inferential statistics extends findings from a subset of data to inferences about an entire population . 
+- **Hypothesis Testing**: Allows researchers to compare data to an assumed or expected distribution, indicating whether a finding is likely due to chance or not.
+- **Confidence Intervals**: Provides a range within which the true population value is likely to fall.
+- **Regression Analysis**: Predicts the values of dependent variables using one or more independent variables.
+- **Probability**: Helps measure uncertainty and likelihood, forming the basis for many inferential statistical tools.
+- **Sampling Techniques**: Guides researchers in selecting appropriate samples to generalize findings to a wider population.
+
+---
+
+## Machine Learning interview questions : 
+---
+1. What do you understand by ML , and how does it differ from ai and data science ?
+---
+ML is a branch of artificial intellignece that deals with building algorithms capable of learning from data . instead of being programmed with fixed rules , these algos identify patterns in data and use them to make predictions or decisions that improve with experience.
+
+2. What is overfitting in ML , and how can it be avoid ? 
+---
+it occurs when a model not only learns the true patterns in the training data but also memorizes the noise or random fluctuations. this results in high accuracy on training data but poor performance on unseen/test data.<br> 
+ways to avoid it : 
+- Early stopping : Strop training when validation accuracy stops improving , even if training accuracy is still increasing . 
+- Regularization : apply techniques like L1 (Lasso) or L2 (Ridge) Regularization with add penalties to large weights to reduce model complexity. 
+- Cross-validation : use k-fold cross validation to ensure the model generalizes well.
+- Dropout (for neural networks) : Randomly drop neurons during training to prevent over-reliance on specific nodes .
+- simpler models : avoid overly complex models when simpler ones can explain the data well .
+
+3. Undefitting ? 
+---
+it occurs when a model is too simple to capture the underlying patterns in the data. this leads to poor accuracy on both training and test data.
+<br>
+_ways to avoid it :_ 
+- use a more complex model : chose a model with higher complexity to learn patten like decision trees, neural network ... 
+- add relevant features : include meaningful features that better represent the data 
+- reduce regularization : too much regularization can restrict the models ability to learn 
+- train longer : allow the model more epochs or iterations to properly learn patterns 
+
+4. what is Regularization ? 
+---
+is a technique used to reduce model complexity and prevent overfitting. It works by adding a penalty term to the loss function to discourage the model from assigning too much importance(large weights) to specific features. This helps the model generalize better on unseen data.<br>
+ways to apply regularization :
+- ***L1 Regularization (Lasso):** Adds the absolute value of weights as a penalty which can shrink some weights to zero and perform feature selection.
+- ***L2 Regularization (Ridge):** Adds the squared value of weights as a penalty which reduces large weights but doesn’t eliminate them.
+- ***Elastic Net:** Combines both L1 and L2 penalties to balance feature selection and weight reduction.
+- **Dropout (for Neural Networks)** Randomly drops neurons during training to avoid over-reliance on specific nodes.
+
+5. Explain Lasso and ridge regularization, How do they help elastic net regularization ? 
+---
+- Lasso Regularization(L1) : Lasso adds a penalty equal to the absolute values of the models weights to the loss function. it can shrink some weights to exaclty zero, performing feature selection.
+- Ridge regularization : it adds a penalty equal to the square of the models weights to the loss function . it reduces large wights but does not set them to zero, helping generalization <br>
+__Key differences__ : 
+	 - ****Lasso (L1):**** Can set weights to zero → feature selection. Use it when we have many irrelevant features.
+	- ****Ridge (L2):**** Reduces weights but keeps all features → no feature elimination. Use when all features are useful but want to avoid overfitting.
+-Elastic net regularization : combines both l1 and l2 penalties , balancing feature selection and weight reduction. It is especially useful when features are correlated , as it avoids lasso's limitation of picking only one feature from a group .
+
+5. What are different model evaluation techniques in machine learning ? 
+---
+Model evaluation techniques are used to assess how well a machine learning model performs on unseen data, 
+choosing the right technique depends on the type of problem like classification , regression m etc and type of dataset we have.
+- Train-test split : divide data into training and testing sets like 70:30 or 80:20 to evaluate model performance on unseen data. here 70% data will be used for training and 30% will be used to test accuracy of model.
+- cross-validation : split data into k folds , train on k-1 folds validate on the remaining fold and average the results to reduce bias 
+- Confusion matrix (for classification) : counts True Positives , True Negatives ,False Positives and False Negatives 
+- Accuracy: Proportion of correct predictions over total predictions 
+- Precision : here correct positive predictions are divided by total predicted positives 
+- Recall : correct positive predictions are divided by total actual positives 
+- F1 . score : harmonic mean of precision and recall. It balances precision and recall 
+- ROC curve & AUC : measures models abulity to distinguish between classes , here AUC is area under the ROC curve
+- Loss Functions (for regression , classification) : quanitifies prediction error to optimize model . It can include : mean absolute error , mean squared error .. .
+
+7. Explain confusion matrix : 
+---
+is a table used to evaluate classification model. It compares the predicted labes with the actuals labels telling how well the model is performinf and what type of errors it makes 
+
+8. What is the difference between precision and reclass ? how F1 combines both ? 
+---
+Precision : it is the ration between the true positives and all the positive examples predicted by the model. in other words , precision measures how many of the predicted positive examples are actually true positives. it is a measure of the model's ability to avoid false positives and make accurate positive predictions. <in spam detection , high precision means most emails marked as spam are true spam>
+<br>
+Recall : it calculate the ration of true positives and the total number of examples that actually fall in the positive class . Recall measures how many of the actual positive examples of the models ability to avoid false negatives and identify all positive examples correctly .
+<In disease detection , high recall means most sick patients are correctly identified><br>
+Precision is about being exact(avoiding false positive)
+, recall is about being comprehensive (avoiding false negatives)
+
+9. Different Loss Functions in machine learning : 
+---
+Loss functions measure the error between the model's predicted output and the actual target value. They guide the optimization process during training. Some of them are : <br>
+- Mean Squared Error (MSE) : used in regression problem. It penalizes larger errors more heavily by squaring them 
+- Mean Absolute Error (MAE) : used in regression as it takes absolute differences between predicted and actual values. it is less sensitive to outliers than MSE
+- Huber loss : It combines MSE and MAE making it less sensitive to outliers than MSE.
+- Cross-Entropy Loss (Log loss):Used in classification problem. It measures the difference between predicted probability distribution and actual labels.
+- Hinge Loss :  Used for classification with SVMs. It encourages maximum margin between classes.
+- KL divergence : measures how one probability distribution differs from another hence used in probabilistic models. 
+- Exponential loss : used in boosting methids like AdaBoost; penalizes misclassified points more strongly
+- R-squared (R^2) : used in regression and measures how well the model explains variance in the target variable
+
+10. What is AUC-ROC curve ? 
+---
+roc curve(receiver operating characteristic) : the ROC curve is a graphical plot that shows the trade-off between true positive RATE (TPR/Recall) and False Positive Rate at different threshold values .
+AUC(area under the curve) : aux is the area under the ROC curve. it represents the probability that a radomly chosen positive instance is ranked higher than a randomly chosen negative instance. 
+- AUC = 1 -> perfect classifier
+- AUC = 0.5 -> Random guessing 
+- AUC < 0.5 -> worse than random 
+Roc shows performance across thresholds , AUC summarizes overall model performance into a single number <br>
+****Example:**** If a medical test has an AUC of 0.90, it means there’s a 90% chance that the model will rank a randomly chosen diseased patient higher than a healthy one.
+
+11. is accuracy always a good metric for classification performance ? 
+---
+No, accuracy can be misleading, especially with imbalanced datasets. In such cases:
+
+- Precision and Recall provide better insight into model performance.
+- F1-score combines precision and recall as their harmonic mean, giving a balanced measure of model effectiveness, especially when the classes are imbalanced.
+
+12. What is cross-validation ? 
+---
+Cross-validation is a model evaluation technique used to test how well a machine learning model generalizes to unseen data. Instead of training and testing on a single split, the dataset is divided into multiple subsets (called folds) and the model is trained and tested multiple times on different folds. <br> <br>
+how It works :  
+1. Split the dataset into k folds like 5 or 10
+2. train the model on (k-1) folds and test it on the remaining fold
+3. repeat this process k times so that every fold is used for testing once 
+4. take the average of all results as the final performace score . <br>
+Types of Cross-validation : 
+- K-fold cross validation : dataset is divided into k equal fold and training/testing is repeated k times .
+- stratified k-fold : similar to k-fold but keeps class distribution balances(useful in classification)
+- Leave-one-out(LOO) : special case where k = number of samples and every single point acts as a test set once
+- Hold-out method : simple train/test split and is considered a basic form of validation
