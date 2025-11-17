@@ -193,19 +193,19 @@ in constrast inferential statistics extends findings from a subset of data to in
 
 ## Machine Learning interview questions : 
 ---
-1. What do you understand by ML , and how does it differ from ai and data science ?
+1. __What do you understand by ML , and how does it differ from ai and data science ?__
 ---
-ML is a branch of artificial intellignece that deals with building algorithms capable of learning from data . instead of being programmed with fixed rules , these algos identify patterns in data and use them to make predictions or decisions that improve with experience.
+ML is a branch of artificial intelligence that deals with building algorithms capable of learning from data . instead of being programmed with fixed rules , these algorithms identify patterns in data and use them to make predictions or decisions that improve with experience.
 
-2. What is overfitting in ML , and how can it be avoid ? 
+2. __What is overfitting in ML , and how can it be avoid ?__
 ---
 it occurs when a model not only learns the true patterns in the training data but also memorizes the noise or random fluctuations. this results in high accuracy on training data but poor performance on unseen/test data.<br> 
 ways to avoid it : 
-- Early stopping : Strop training when validation accuracy stops improving , even if training accuracy is still increasing . 
-- Regularization : apply techniques like L1 (Lasso) or L2 (Ridge) Regularization with add penalties to large weights to reduce model complexity. 
-- Cross-validation : use k-fold cross validation to ensure the model generalizes well.
-- Dropout (for neural networks) : Randomly drop neurons during training to prevent over-reliance on specific nodes .
-- simpler models : avoid overly complex models when simpler ones can explain the data well .
+- __Early stopping__ : Strop training when validation accuracy stops improving , even if training accuracy is still increasing . 
+- __Regularization__ : apply techniques like L1 (Lasso) or L2 (Ridge) Regularization with add penalties to large weights to reduce model complexity. 
+- __Cross-validation__ : use k-fold cross validation to ensure the model generalizes well.
+- __Dropout (for neural networks)__ : Randomly drop neurons during training to prevent over-reliance on specific nodes .
+- __simpler models__ : avoid overly complex models when simpler ones can explain the data well .
 
 3. Undefitting ? 
 ---
@@ -217,7 +217,7 @@ _ways to avoid it :_
 - reduce regularization : too much regularization can restrict the models ability to learn 
 - train longer : allow the model more epochs or iterations to properly learn patterns 
 
-4. what is Regularization ? 
+4. __what is Regularization ?__ 
 ---
 is a technique used to reduce model complexity and prevent overfitting. It works by adding a penalty term to the loss function to discourage the model from assigning too much importance(large weights) to specific features. This helps the model generalize better on unseen data.<br>
 ways to apply regularization :
@@ -226,19 +226,19 @@ ways to apply regularization :
 - ***Elastic Net:** Combines both L1 and L2 penalties to balance feature selection and weight reduction.
 - **Dropout (for Neural Networks)** Randomly drops neurons during training to avoid over-reliance on specific nodes.
 
-5. Explain Lasso and ridge regularization, How do they help elastic net regularization ? 
+5. __Explain Lasso and ridge regularization, How do they help elastic net regularization ?__
 ---
-- Lasso Regularization(L1) : Lasso adds a penalty equal to the absolute values of the models weights to the loss function. it can shrink some weights to exaclty zero, performing feature selection.
-- Ridge regularization : it adds a penalty equal to the square of the models weights to the loss function . it reduces large wights but does not set them to zero, helping generalization <br>
+- __Lasso Regularization(L1)__ : Lasso adds a penalty equal to the absolute values of the models weights to the loss function. it can shrink some weights to exaclty zero, performing feature selection.
+- __Ridge regularization__ : it adds a penalty equal to the square of the models weights to the loss function . it reduces large wights but does not set them to zero, helping generalization <br>
 __Key differences__ : 
-	 - ****Lasso (L1):**** Can set weights to zero → feature selection. Use it when we have many irrelevant features.
-	- ****Ridge (L2):**** Reduces weights but keeps all features → no feature elimination. Use when all features are useful but want to avoid overfitting.
--Elastic net regularization : combines both l1 and l2 penalties , balancing feature selection and weight reduction. It is especially useful when features are correlated , as it avoids lasso's limitation of picking only one feature from a group .
+	 - ***Lasso (L1):** Can set weights to zero → feature selection. Use it when we have many irrelevant features.
+	- ***Ridge (L2):** Reduces weights but keeps all features → no feature elimination. Use when all features are useful but want to avoid overfitting.
+-__Elastic net regularization__ : combines both l1 and l2 penalties , balancing feature selection and weight reduction. It is especially useful when features are correlated , as it avoids lasso's limitation of picking only one feature from a group .
 
-5. What are different model evaluation techniques in machine learning ? 
+5. __What are different model evaluation techniques in machine learning ?__
 ---
 Model evaluation techniques are used to assess how well a machine learning model performs on unseen data, 
-choosing the right technique depends on the type of problem like classification , regression m etc and type of dataset we have.
+choosing the right technique depends on the type of problem like classification , regression etc and type of dataset we have.
 - Train-test split : divide data into training and testing sets like 70:30 or 80:20 to evaluate model performance on unseen data. here 70% data will be used for training and 30% will be used to test accuracy of model.
 - cross-validation : split data into k folds , train on k-1 folds validate on the remaining fold and average the results to reduce bias 
 - Confusion matrix (for classification) : counts True Positives , True Negatives ,False Positives and False Negatives 
@@ -249,11 +249,11 @@ choosing the right technique depends on the type of problem like classification 
 - ROC curve & AUC : measures models abulity to distinguish between classes , here AUC is area under the ROC curve
 - Loss Functions (for regression , classification) : quanitifies prediction error to optimize model . It can include : mean absolute error , mean squared error .. .
 
-7. Explain confusion matrix : 
+7. __Explain confusion matrix :__ 
 ---
-is a table used to evaluate classification model. It compares the predicted labes with the actuals labels telling how well the model is performinf and what type of errors it makes 
+is a table used to evaluate classification model. It compares the predicted labes with the actuals labels telling how well the model is performing and what type of errors it makes.
 
-8. What is the difference between precision and reclass ? how F1 combines both ? 
+8. __What is the difference between precision and recall ? how F1 combines both ?__ 
 ---
 Precision : it is the ration between the true positives and all the positive examples predicted by the model. in other words , precision measures how many of the predicted positive examples are actually true positives. it is a measure of the model's ability to avoid false positives and make accurate positive predictions. <in spam detection , high precision means most emails marked as spam are true spam>
 <br>
@@ -262,7 +262,7 @@ Recall : it calculate the ration of true positives and the total number of examp
 Precision is about being exact(avoiding false positive)
 , recall is about being comprehensive (avoiding false negatives)
 
-9. Different Loss Functions in machine learning : 
+9. __Different Loss Functions in machine learning :__  
 ---
 Loss functions measure the error between the model's predicted output and the actual target value. They guide the optimization process during training. Some of them are : <br>
 - Mean Squared Error (MSE) : used in regression problem. It penalizes larger errors more heavily by squaring them 
@@ -274,24 +274,24 @@ Loss functions measure the error between the model's predicted output and the ac
 - Exponential loss : used in boosting methids like AdaBoost; penalizes misclassified points more strongly
 - R-squared (R^2) : used in regression and measures how well the model explains variance in the target variable
 
-10. What is AUC-ROC curve ? 
+10. __What is AUC-ROC curve ?__  
 ---
-roc curve(receiver operating characteristic) : the ROC curve is a graphical plot that shows the trade-off between true positive RATE (TPR/Recall) and False Positive Rate at different threshold values .
-AUC(area under the curve) : aux is the area under the ROC curve. it represents the probability that a radomly chosen positive instance is ranked higher than a randomly chosen negative instance. 
+ROC curve(receiver operating characteristic) : the ROC curve is a graphical plot that shows the trade-off between true positive RATE (TPR/Recall) and False Positive Rate at different threshold values .
+AUC(area under the curve) : auc is the area under the ROC curve. it represents the probability that a radomly chosen positive instance is ranked higher than a randomly chosen negative instance. 
 - AUC = 1 -> perfect classifier
 - AUC = 0.5 -> Random guessing 
 - AUC < 0.5 -> worse than random 
 Roc shows performance across thresholds , AUC summarizes overall model performance into a single number <br>
-****Example:**** If a medical test has an AUC of 0.90, it means there’s a 90% chance that the model will rank a randomly chosen diseased patient higher than a healthy one.
+***Example:** If a medical test has an AUC of 0.90, it means there’s a 90% chance that the model will rank a randomly chosen diseased patient higher than a healthy one.
 
-11. is accuracy always a good metric for classification performance ? 
+11. __is accuracy always a good metric for classification performance ?__  
 ---
 No, accuracy can be misleading, especially with imbalanced datasets. In such cases:
 
 - Precision and Recall provide better insight into model performance.
 - F1-score combines precision and recall as their harmonic mean, giving a balanced measure of model effectiveness, especially when the classes are imbalanced.
 
-12. What is cross-validation ? 
+12. __What is cross-validation ?__  
 ---
 Cross-validation is a model evaluation technique used to test how well a machine learning model generalizes to unseen data. Instead of training and testing on a single split, the dataset is divided into multiple subsets (called folds) and the model is trained and tested multiple times on different folds. <br> <br>
 how It works :  
@@ -304,3 +304,116 @@ Types of Cross-validation :
 - stratified k-fold : similar to k-fold but keeps class distribution balances(useful in classification)
 - Leave-one-out(LOO) : special case where k = number of samples and every single point acts as a test set once
 - Hold-out method : simple train/test split and is considered a basic form of validation
+
+1. __Explain k-fold Cross-validation, leave one out and hold-out method :__  
+---
+- K-Fold Cross-Validation : the dataset is divided into k equal folds. The model is trained on (k-1) folds and tested on the remaining fold. This process is repeated k times, with each fold used once as the test set. The final score is the average of all k test result :
+		CVerror​=(1/k)​∑(i=1,k)​errori
+- Leave-One-Out Cross-Validation (LOO) : a special case of k-Fold where k = number of samples. Each observation is used once as the test set while the remaining data is used for training. It gives very accurate estimates but is computationally expensive for large datasets. 
+- Hold out Method : the simplest technique where the dataset is split into two parts : a training set and a testing set (70% and 30%). The model is trained on the training set and evaluated on the test set.It is fast but may lead to biased results depending on the split.
+
+14. __Difference Between Regularization , Standardization and normalization :__  
+---
+1. Regularization : A technique used to reduce overfitting by adding a penalty term to the model's loss function , discouraging overly complex models. Examples are L1 , L2 , Elastic Net. 
+	   works on model parameters (weights) . 
+2. Standardization : A preprocessing step that rescales features so they have mean = 0 and standard deviation = 1 : 
+		​x' = (x−μ​)/σ <br>Useful for algorithms sensitive to feature scales like SVM , KNN , logistic regression etc 
+	
+	
+3. Normalization : A preprocessing step that rescales feature values into a fixed range usually [0,1]  
+		x' = (x - xmin) /(xmax - xmin)
+		<br> useful when features have different scales or units <br>
+
+
+|Aspect|Regularization|Standardization|Normalization|
+|---|---|---|---|
+|Purpose|Prevent overfitting|Rescale features (mean = 0, std = 1)|Rescale features to a range (e.g., [0,1])|
+|Works On|Model weights|Input features|Input features|
+|Main Idea|Add penalty to loss function|Center and scale features|Shrink features into fixed range|
+|Example Techniques|L1, L2, Elastic Net|Z-score scaling|Min-Max scaling|
+|When to Use|High variance / overfitting|Algorithms needing Gaussian-like distribution|Features with different ranges / uni|
+15. what is Feature engineering in machine learning ; 
+---
+Is the process of creating , transforming or selecting relevant features from raw data to improve the performance of machine learning model. Better features often lead to better model accuracy and generalization. It also reduces overfitting and make the model easier to interpret.
+__key steps in feature engineering:__
+- __Feature creation__ : generate new features from existing data like extracting "year" or  "month" from a date column 
+- __Feature transformation__ : apply scaling , normalization or mathematical transformations (log , square root) to features.
+- __feature encoding__ : convert categorical variables into numerical form like one-hot encoding , label encoding. 
+- __feature selection__ : identify and keep only the most relevant features using techniques like correlation analysis , mutual information ir model-based importance scores.
+Examples : <br>
+- raw data : Date of birth , feature engineered : Age . 
+- raw data : text review -> feature engineered : sentiment score .
+
+16. difference between feature engineering and feature selection : 
+___
+
+| Aspect     | feature engineering                                                                                     | feature selection                                                                                                        |
+| ---------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Definition | Process of creating, transforming, or deriving new features from raw data to improve model performance. | Process of selecting the most relevant features from the existing dataset to reduce noise and improve model performance. |
+
+|   |   |   |
+|---|---|---|
+|Purpose|To enhance or create meaningful features that the model can learn from.|To remove irrelevant or redundant features and simplify the model.|
+
+|   |   |   |
+|---|---|---|
+|Process|Involves feature creation, transformation, encoding, scaling, etc.|Involves statistical tests, correlation analysis, mutual information, or model-based importance scores.|
+
+|   |   |   |
+|---|---|---|
+|Output|New or transformed features added to the dataset.|Subset of the original features retained for modeling.|
+
+|   |   |   |
+|---|---|---|
+|Example|Extracting Age from Date of Birth or generating sentiment scores from text.|Selecting top 10 features with highest importance from 50 features using Random Forest.|
+17. Feature selection techniques in machine learning : 
+---
+F.S : is the process of choosing the most relevant features from your dataset to improve model performance , reduce overfitting and simplify the model .<br>
+-  Filter methods : it evaluate each feature independetly with target variable . feature with high correlation with target variable are selected as it means this feature has some relation and can help us in making predictions . here features are selected based on statistical measures without involving any machine learning model . <br>
+	examples :
+	-  correlation coefficient : remove features highly correlated with others 
+	- chi square test : for categorical features
+	- anova F-test : for numerical features 
+-  Wrapper methods : it uses different combination of features and compute relation between these subset features and target variable and based on conclustion addiction and removal of features are done. Stopping criteria for selecting the best subset are usually pre-defined by the person training the model such as when the performance of the model decreases or a specific number of features are achieved.
+		examples : 
+		 - forward selection : start with no features and add one at a time 
+		 - backward elimination : start with all features and remove one at a time
+		 - recursive feature elimination RFE: iteratively removes least important features using model weights
+-  Embedded methods :it perform feature selection during the model training process allowing the model to select the most relevant features based on the training process dynamically 
+		examples : 
+		Lasso regression : can shrink some feature coefficients to zero 
+		decision tree / random forest feature importance : select features based on importance socres learned during training .
+<br>
+17. what is Dimentionality reduction in machine learning : 
+---
+Dimentionality reduction is the process of reducing the number of features (variables) in a dataset while retaining the most of important information. It helps in simplifying models , improving performance , reducing overfitting and speedind up computation. Feature selection and engineering comes under this.
+- reduces computational cost for high-dimensional datasets 
+- helps visualize data in 2D or 3D space. 
+- reduces overfitting by removing irrelevant or noisy features
+<br>
+Example : a dataset has 100 features. using PCA , it can be reduced to 10 principal components that capture 95% of the variance.
+
+19. what is categorical data and how to handle it ? 
+---
+refers to features that represent discrete values or categories m rather than continuous numerical values. Examples include gender(Male , female) , color (Red , Blue , Green) or product type (Electronics , clothing) .
+<br>types of categorical data : 
+- nominal : where the order does no matter 
+- ordinal : when the order matter 
+Machine learning models require numerical imputs , so the categorcial data needs to be handelled using encoding "label encoding , One-Hot encoding , Binary encoding , target/mean encoding ".
+
+20. what is the upsampling and the downsampling : 
+---
+Upsampling and downsampling are techniques used to handle imbalanced datasets where the number of samples in different classes is unequal . 
+- Upsampling(oversampling): increases the number of samples in the minority class to balance the dataset. Techniques include : 
+<br>Random Oversampling : duplicate random samples from the minority class . <br>
+SMOTE (synthetic minority over-sampling technique) : generate sunthetic samples by interpolating between existing minority samples 
+
+- Downsampling (undersampling) : reduces the number of samples in the majority class to balance the dataset , techniques include  :  <br>
+Random undersampling : randomly remoce samples from the mojority class 
+<br>
+Cluster based undersampling : remove samples based on clustering to retain diversity 
+<br>
+***Example:** We have a dataset of 1000 positive samples, 100 negative samples.
+
+- Upsampling create 900 additional negative samples.
+- Downsampling reduce positive samples to 100.
