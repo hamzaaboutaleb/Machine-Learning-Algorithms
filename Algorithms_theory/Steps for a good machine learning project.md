@@ -23,28 +23,28 @@
 
 ### Recommeded Folder structure : 
 ---
-/project
+/project<br>
 │
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── external/
+├── data/<br>
+│   ├── raw/<br>
+│   ├── processed/<br>
+│   └── external/<br>
 ├── notebooks/
-│   ├── 01_eda.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   └── experiments/
-├── src/
-│   ├── data/
-│   ├── features/
-│   ├── models/
-│   ├── pipelines/
-│   └── utils/
-├── models/
-├── reports/
-│   ├── figures/
-│   └── Final_Report.pdf
-├── mlflow/ or wandb/
-└── requirements.txt
+│   ├── 01_eda.ipynb<br>
+│   ├── 02_feature_engineering.ipynb<br>
+│   └── experiments/<br>
+├── src/<br>
+│   ├── data/<br>
+│   ├── features/<br>
+│   ├── models/<br>
+│   ├── pipelines/<br>
+│   └── utils/<br>
+├── models/<br>
+├── reports/<br>
+│   ├── figures/<br>
+│   └── Final_Report.pdf<br>
+├── mlflow/ or wandb/<br>
+└── requirements.txt<br>
 
 ### Tools recommended : 
 ---
@@ -92,16 +92,16 @@
 |                                | MkDocs + Material for Python                | Project websites                                             |
 __Dream stack__ : 
 ___
-Python + Polars + Plotly 
-→ Weights & Biases (tracking)
-→ Optuna (tuning)
-→ LightGBM / CatBoost / FT-Transformer
-→ Feast (feature store)
-→ Prefect 2 (orchestration)
-→ BentoML (packaging)
-→ Docker + Triton / FastAPI
-→ Evidently AI (monitoring)
-→ Quarto (final report)
+Python + Polars + Plotly <br>
+→ Weights & Biases (tracking)<br>
+→ Optuna (tuning)<br>
+→ LightGBM / CatBoost / FT-Transformer<br>
+→ Feast (feature store)<br>
+→ Prefect 2 (orchestration)<br>
+→ BentoML (packaging)<br>
+→ Docker + Triton / FastAPI<br>
+→ Evidently AI (monitoring)<br>
+→ Quarto (final report)<br>
 
 | Category                           | Tool / App                                              | Best For                                                                                                     | Who Uses It (2025 Reality)                                    | Learning Difficulty                               |
 | ---------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------------- |

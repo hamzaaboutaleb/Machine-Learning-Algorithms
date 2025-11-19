@@ -1,70 +1,41 @@
 {
   "main": {
-    "id": "42e7876612fd64ce",
+    "id": "1d37c5389b250930",
     "type": "split",
     "children": [
       {
-        "id": "739f98caa3f6dace",
+        "id": "8f92ee65ce6c6c71",
         "type": "tabs",
         "children": [
           {
-            "id": "a1671c68aed3cb88",
+            "id": "7bcd0f93d4ae52f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knn (K nearest neighbors).md",
+                "file": "Welcome.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "knn (K nearest neighbors)"
-            }
-          },
-          {
-            "id": "6ddde5618565d1c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview questions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Interview questions"
-            }
-          },
-          {
-            "id": "058d7d1bebd6681c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Steps for a good machine learning project.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Steps for a good machine learning project"
+              "title": "Welcome"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "f0411ff3fce87aa1",
+    "id": "b4bd6536acbd74af",
     "type": "split",
     "children": [
       {
-        "id": "8f7df21b7c80e569",
+        "id": "6a987ca7e8bfb098",
         "type": "tabs",
         "children": [
           {
-            "id": "4661b50611eb871d",
+            "id": "35c69806fe8ec7f7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,7 +48,7 @@
             }
           },
           {
-            "id": "a705b6609a1cb90b",
+            "id": "9e063280720ea1ca",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -94,7 +65,7 @@
             }
           },
           {
-            "id": "f83759c42026b388",
+            "id": "d6a1d46c3e67e72a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -107,23 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "63362dd39d2890f2",
+    "id": "bda3cb55d9d08a59",
     "type": "split",
     "children": [
       {
-        "id": "713bb0d385dc5023",
+        "id": "3fa26d33782e002e",
         "type": "tabs",
         "children": [
           {
-            "id": "439277d5976d9334",
+            "id": "81441b13c37cbc9a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knn (K nearest neighbors).md",
+                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for knn (K nearest neighbors)"
+              "title": "Backlinks for Welcome"
             }
           },
           {
-            "id": "190377f59e882826",
+            "id": "78d057a2a8ffbf92",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knn (K nearest neighbors).md",
+                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from knn (K nearest neighbors)"
+              "title": "Outgoing links from Welcome"
             }
           },
           {
-            "id": "d973d33e4632dad0",
+            "id": "d4a972ea1ea56d47",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -166,7 +137,7 @@
             }
           },
           {
-            "id": "eaab7ec001f1b40f",
+            "id": "99facf06f81a007d",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -180,18 +151,18 @@
             }
           },
           {
-            "id": "6f99c9d053ddee7f",
+            "id": "0b08d0bc0a08fec2",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "knn (K nearest neighbors).md",
+                "file": "Welcome.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of knn (K nearest neighbors)"
+              "title": "Outline of Welcome"
             }
           }
         ]
@@ -212,26 +183,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "058d7d1bebd6681c",
+  "active": "7bcd0f93d4ae52f4",
   "lastOpenFiles": [
-    "Steps for a good machine learning project.md",
-    "Interview questions.md",
-    "A good presentation points.md",
-    "knn (K nearest neighbors).md",
-    "Logistic Regression.md",
-    "Linear regression.md",
-    "Pasted image 20251113200435.png",
-    "images/659809c7531ac2845a272536_image4_11zon_d6c6352c9b.avif",
-    "images/Non confirmé 537539.crdownload",
-    "images/659809bf531ac2845a27252e_image21_11zon_b29a6e7ebf.avif",
-    "images/Non confirmé 888505.crdownload",
-    "659809bf531ac2845a27252e_image21_11zon_b29a6e7ebf.avif",
-    "Untitled.base",
-    "Pasted image 20251113152214.png",
-    "image-url.md",
-    "images/Screenshot 2025-11-12 210053.png",
-    "images/Screenshot 2025-11-12 210453.png",
-    "images/Screenshot 2025-11-12 210103.png",
-    "images/Screenshot 2025-11-12 205857.png"
+    "Welcome.md"
   ]
 }
