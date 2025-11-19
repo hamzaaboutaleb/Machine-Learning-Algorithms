@@ -476,4 +476,64 @@ In machine learning , a hypothesis is a function or model that maps input featur
 ---
 the bias-variance tradeoff is a fundamental concept in machine learning that describes the tradeoff between two sources of error that affect model performance. 
 	1. Bias : 
-		- Error due to wrong assumptions in the learning algorithm 
+		- Error due to wrong assumptions in the learning algorithm.
+		- High bias means underfitting and model is too simple to capture patterns 
+		- example : linear model trying to fit highly non-linear data
+	2. Vriance:
+		- Error due to model being too sensitive to small fluctuations in training data 
+		- High variance means overfitting and model performs well on training data but poorly on unseen data
+		- Example : Deep decision tree memorizing training data
+	3- trade-off : 
+		- Desreasing bias usually increases variance and vice versa.
+		- Our goal is to find a balance that minimizes total error . 
+		- Total error = Bias ^2 + Vriance + Irreducible error 
+
+26. what is Hyperparameter-tuning in machine learing : 
+---
+Hyperparameter tunning is the process of finding the best set of hyperparameters for a machine learning model to maximize performance. Hyperparameters are parameters set before training like learning rate , number of trees in random forest , regularization strength , etc that cannot be learned directly from the data.<br>
+__common hyperparameter tunning methods are :__ 
+- Grid Search : it tries all possible combinaitions of hyperparameters from a predefined set. It is simple and exhaustive , but computationally expensive for large search spaces
+- Random Search : randomly samples combinations of hyperparameters are taken from a given range. Often faster than grid search and can find good results in fewer iterations. 
+- Bayesian optimization :  Build a probabilistic model of the objective function and selects hyperparameters to maximize performance. Efficient for expensive models; balances exploration and exploitation 
+
+27. what are the assumptions of Linear Regression algorithm : 
+---
+	1. Linearity : relationship between x and y is linear 
+	2. Independence : data points are independent 
+	3. homoscedasticity : error terms have constant variance
+	4. normality of errors : residuals follow a normal distribution 
+	5. no multicollinearity : features should not be highly correlated
+
+28. Explain how sigmoid function work in logistic regression and why it is not a regression model even though it name has it ? 
+---
+In logistic regression, we want to predict probabilities for binary outcomes (e.g., 0 or 1). The sigmoid function converts any real number into a value between 0 and 1, making it suitable for probabilities.
+- Despite the name, logistic regression is used for classification, not regression. As it does not predict continuous values like linear regression, but instead predicts probabilities.
+- A threshold (e.g., 0.5) is applied to classify outcomes as 0 or 1.
+
+29. How to choose an optimal number of clusters ? 
+---
+- Elbow method 
+- silhouette score 
+- Gap statistic 
+
+30. what is multicollinearity and why is it a problem ? 
+---
+multicollinearity occurs when two or more independent features are highly correlated with each other in a dataset. 
+<br>
+This means one feature can be linearly predicted from another with high accuracy. It can cause problems like :
+	1. Unstable Coefficients : makes regression coefficients unreliable and highly sensitive to small changes in data.
+	2. Interpretation difficulty : Hard to determine the individual effect of each feature on the target variable 
+	3. Reduced Model Performance: May not affect prediction accuracy much , but impacts the explainability of the model 
+	4. inflated variance : leads to high standard errors in coefficient estimates
+<br>
+Detection Methods : 
+- Correlation matrix : check for high correlation between features 
+- Variance inflation fact (VIF) : A VIF > 5 or 10 usually indicates strong multicollinearity
+<br>
+Solutions : 
+- Remove or combine correlated features.
+- Use Principal Component Analysis (PCA) or other dimensionality reduction techniques.
+- Apply regularization methods like Ridge regression
+
+31. What is Variance inflation factor ? 
+---
