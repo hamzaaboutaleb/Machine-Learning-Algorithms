@@ -417,3 +417,63 @@ Cluster based undersampling : remove samples based on clustering to retain diver
 
 - Upsampling create 900 additional negative samples.
 - Downsampling reduce positive samples to 100.
+
+21. Explain SMOTE method used to handle imblance 
+---
+SMOTE creates synthetic data points for minority classes using linear interpolation between existing samples.
+- the model is trained on more diverse examples rather than duplicating existing points 
+- it may introduce noise into the dataset, potentially affecting model performance if overused.
+
+22. how to handle missing and duplicate values : 
+---
+Missing values are common in real world datasets and can affect model performance. Techniques to handle missing values : 
+- remove rows or columns : drop rows with missing values using dropna() in pandas , drop column if most values are missing 
+- Imputation : Mean / Median / mode , forward/backward fill , prediction-based imputation 
+- flag missing values : create a new binary column to indicate whether a value was missing . <br>
+Duplicate rows can lead to biased or misleading results , techniques to handle it : 
+- identify duplicates 
+- remove duplicates 
+- keep the most relevant row
+
+23. what are outliers and how to handle them ? 
+---
+Outliers are data points that differ significantly from other observations in the dataset. They can arise due to errors , variability in data or rare events .
+- can skew statistics like mean and standard deviation 
+- can mislead machine learning models , especially regression and distance-based algorithms
+<br>
+Detection methods : <br>
+- Box plot / IQR method 
+- Z-score method
+- visualization : Scatter plots , histograms or violin plots 
+<br>
+Handling methods : 
+- Remove outliers : delete extreme values if they are errors or irrelevant 
+- Transform data : apply log , square root or other transformations to reduce skewness 
+- cap/floor values : replace extreme values with upper/lower bounds(Winsorization)
+- Use Robust Models : models like decision trees or random Forests are less sensitive to outliers 
+
+24. Different hypothesis in machine learning ? 
+---
+In machine learning , a hypothesis is a function or model that maps input features to output predictions. Different hypotheses represent different types of models or assumptions about the data .
+	1. Null Hypothesis (H0) : 
+			- Assumes no effect or no relationship exists between features and target
+			- often used in statistical testing to validate model assumptions 
+			- Example : Feature X has no impact on predicting Y 
+	2. Alternative Hypothesis (H1 or Ha) : 
+			- Assumes there is a relationship or effect.
+	3. Parametric hypotheses :
+			- Assume the data follows a known distribution and have fixed parameters 
+			- Example : linear regression assume linear relationship with parameters (weights)
+	4. Non-Parametric Hypotheses : 
+			- Make no assumptions about the underlying data distribution 
+			- Examples : Decision Trees , K-nearest neighbors
+	5. Machine learning hypothesis functions (hθ):
+			- represent the model used to make predictions 
+			- example :hθ​(x)=θ0​+θ1​x1​+θ2​x2​+⋯+θn​xn​
+			- in supervised learning the goal is to find the hypothesis that minimizes error on the training data
+
+25. What is Bias-Variance tradeoff ? 
+---
+the bias-variance tradeoff is a fundamental concept in machine learning that describes the tradeoff between two sources of error that affect model performance. 
+	1. Bias : 
+		- Error due to wrong assumptions in the learning algorithm 
