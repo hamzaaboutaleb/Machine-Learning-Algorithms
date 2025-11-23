@@ -1,66 +1,60 @@
-## what linear regression is really doing ? 
+## Introduction to linear regression : 
 ---
-- Linear regression finds the best linear explanation of how inputs produce outputs . i.e linear regression finds the vector of parameters that gives predictions closest(in euclidean distance) to the real output 
-#### the true core idea :
+Linear regression is a type of supervised machine learning algorithm that learns from the labelled datasets and maps the data points with most optimized linear functions which can be used for prediction on new datasets. It assumes that there is a linear relationship between the input and output, meaning the output changes at a constant rate as the input changes. This relationship is represented by a straight line.<br>
+we use independent variable(s) to predict dependent variable.
+### best fit line in linear regression : 
+in linear regression , the best fit line is the straight line that most accurately represents the relationship between the independent variable (input) and the dependent variable (output). It is the line that minimizes the difference between the actual data points and the predicted values from the model.
+1. __Goal of the Best fit line__ : 
 ---
-Imagine you have : 
-- A set of inputs (features)
-- An output you want to explain 
-Linear regression assumes : the output is a combination of the inputs plus some noise . 
-### idea 3 : 
+The goal of linear regression is to find a straight line that minimizes the error (the difference) between the observed data points and the predicted values. This line helps us predict the dependent variable for new, unseen data.
+
+2. __Equation of the best fit line__ 
+--- 
+For simple linear regression (with one independent variable), the best-fit line is represented by the equation :  __y=mx+b__ 
+
+3. __Minimizing the error__
 ---
-Linear regression tries to find the relationship , not just a line.
-- How much does the output change when the input changes ? 
-- what is the best possible straight line rule that explains the data ? 
-- which linear combination of inputs gets me closest to reality ? 
+to find the best fir line  we use a method called Least Squares . The idea behind this method is to minimize the sum of squared differences between the actual values (data points) and the predicted values from the line. These differences are called residuals.
+Residual = yi - y_hat i 
 
-### The hidden Geometric intuition 
+4. __interpretation of the Best fit line__
 ---
-think of : 
-- All your features as forming vectors in a high dimensional space 
-- Your target variable as another vector in the sampe space
-Linear regression tries to answer the questions : 
-- what is the projection of the ttarget vector onto the space spanned by feature vectors 
-
-### why squared error ? 
+- Slope (m) : The slope of the best-fit line indicates how much the dependent variable (y) changes with each unit change in the independent variable (x). For example if the slope is 5, it means that for every 1-unit increase in x, the value of y increases by 5 units.
+- **Intercept (b):*** The intercept represents the predicted value of y when x = 0. It’s the point where the line crosses the y-axis.
+in linear regression some hypothesis are made to ensure reliability of the model's results : 
+- assumes linearity : the method assumes the relationship between the variables is linear 
+- sensitivity to outliers : outliers can significantly affect the slope and intercept , skewing the best fit line 
+<br> __Hypothesis function in linear regression__ : 
 ---
-- squared error measures Euclidean distance 
-- so minimizing the squared error = minimizing distance between : 
-	- actual outputs vector
-	- predicted outputs vector
+in linear regression , the hypothesis function is the equation used to make predictions about the dependent variable based on the independent variables. It represents the relationship between the input features and the target output .
 
-## Deriving linear regression mathematically 
+###  Cost function for Linear Regression : 
 ---
-- **Write the model**
-    
-- **Write the loss function**
-    
-- **Rewrite using matrix notation**
-    
-- **Take the derivative and set to zero**
-    
-- **Solve the normal equation**
-    
-- **Interpret geometrically**
+In Linear Regression, the cost function measures how far the predicted values (Y^) are from the actual values (Y). It helps identify and reduce errors to find the best-fit line. The most common cost function used is Mean Squared Error (MSE), which calculates the average of squared differences between actual and predicted values. <br>
+To minimize this cost, we use Gradient Descent, which iteratively updates θ1 and θ2​ until the MSE reaches its lowest value. This ensures the line fits the data as accurately as possible.
 
-### 1 - Write the model : 
+### Gradient descent for linear regression :
 ---
-Assume you have nnn data points and ppp features.
 
-The linear regression model is:
+Gradient descent is an optimization technique used to train a linear regression model by minimizing the prediction error. It works by starting with random model parameters and repeatedly adjusting them to reduce the difference between predicted and actual values.
+How it works:
 
-							y=Xβ+ε
-Where:
+- Start with random values for slope and intercept.
+- Calculate the error between predicted and actual values.
+- Find how much each parameter contributes to the error (gradient).
+- Update the parameters in the direction that reduces the error.
+- Repeat until the error is as small as possible.
 
-- y is an n x 1 vector of outputs 
-- X is an nxp vector of inputs 
-- β is a px1 vector of parameters 
-- epsilon is noise
-we want to find the best β
-
-### 2 - define the loss (sum of squared errors ) : 
+### Evaluation metrics for linear regression : 
 ---
-Predictions: 
-			y^​=Xβ
-Residuals (erros) : 
-			e=y−Xβ
+A variety of evaluation measures can be used to determine the strength of any linear regression model. These assessment metrics often give an indication of how well the model is producing the observed outputs.
+
+The most common measurements are: 
+1. Mean square error 
+2. mean absolute error 
+3. root mean squared error 
+4. coefficient of determination 
+5. adjusted r squared error 
+
+# Regularization techniques for linear models : 
+---
