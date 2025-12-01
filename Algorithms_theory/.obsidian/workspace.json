@@ -4,38 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "739f98caa3f6dace",
+        "id": "06637faca8f4a307",
         "type": "tabs",
         "children": [
           {
-            "id": "a1671c68aed3cb88",
+            "id": "f36ddcfec41b908f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Logistic Regression.md",
+                "file": "interview questions/Probability and statistics interview questions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Logistic Regression"
+              "title": "Probability and statistics interview questions"
             }
           },
           {
-            "id": "3cd9e3389aafa172",
+            "id": "f514a755c78146f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine learning.md",
+                "file": "Linear regression.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Machine learning"
+              "title": "Linear regression"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,18 +199,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "a1671c68aed3cb88",
+  "active": "f514a755c78146f5",
   "lastOpenFiles": [
+    "checklist machine learning.md",
+    "interview questions/Probability and statistics interview questions.md",
+    "Pasted image 20251130212909.png",
+    "interview questions",
+    "Nouveau dossier",
+    "Interview questions.md",
+    "Vector Calculus.md",
+    "Probability for data science.md",
+    "Logistic Regression.md",
     "Linear regression.md",
     "Machine learning.md",
-    "Interview questions.md",
     "Cloud/Cloud azure interview questions.md",
     "Cloud",
     "knn (K nearest neighbors).md",
     "SVM.md",
     "Steps for a good machine learning project.md",
     "A good presentation points.md",
-    "Logistic Regression.md",
     "Pasted image 20251113200435.png",
     "images/659809c7531ac2845a272536_image4_11zon_d6c6352c9b.avif",
     "images/Non confirmé 537539.crdownload",
