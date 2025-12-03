@@ -27,16 +27,57 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linear regression.md",
+                "file": "Machine learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linear regression"
+              "title": "Machine learning"
+            }
+          },
+          {
+            "id": "19008736d2118f7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Perceptron.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Perceptron"
+            }
+          },
+          {
+            "id": "852ff0099acd29f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Decision tree.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Decision tree"
+            }
+          },
+          {
+            "id": "94cd26ec96a031d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "naive bayes classifiers.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "naive bayes classifiers"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,10 +240,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "f514a755c78146f5",
+  "active": "f36ddcfec41b908f",
   "lastOpenFiles": [
-    "checklist machine learning.md",
+    "Machine learning.md",
+    "naive bayes classifiers.md",
+    "Decision tree.md",
+    "Perceptron.md",
     "interview questions/Probability and statistics interview questions.md",
+    "Pasted image 20251203151504.png",
+    "Linear regression.md",
+    "checklist machine learning.md",
     "Pasted image 20251130212909.png",
     "interview questions",
     "Nouveau dossier",
@@ -210,8 +257,6 @@
     "Vector Calculus.md",
     "Probability for data science.md",
     "Logistic Regression.md",
-    "Linear regression.md",
-    "Machine learning.md",
     "Cloud/Cloud azure interview questions.md",
     "Cloud",
     "knn (K nearest neighbors).md",
@@ -229,7 +274,6 @@
     "image-url.md",
     "images/Screenshot 2025-11-12 210053.png",
     "images/Screenshot 2025-11-12 210453.png",
-    "images/Screenshot 2025-11-12 210103.png",
-    "images/Screenshot 2025-11-12 205857.png"
+    "images/Screenshot 2025-11-12 210103.png"
   ]
 }
