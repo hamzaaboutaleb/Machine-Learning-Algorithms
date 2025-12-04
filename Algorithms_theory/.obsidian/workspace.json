@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f36ddcfec41b908f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "interview questions/Probability and statistics interview questions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Probability and statistics interview questions"
-            }
-          },
-          {
             "id": "f514a755c78146f5",
             "type": "leaf",
             "state": {
@@ -36,48 +22,21 @@
             }
           },
           {
-            "id": "19008736d2118f7e",
+            "id": "de342f036e365cce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Perceptron.md",
+                "file": "Principal Component Analysis PCA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Perceptron"
-            }
-          },
-          {
-            "id": "852ff0099acd29f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Decision tree.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Decision tree"
-            }
-          },
-          {
-            "id": "94cd26ec96a031d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "naive bayes classifiers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "naive bayes classifiers"
+              "title": "Principal Component Analysis PCA"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -240,9 +199,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "f36ddcfec41b908f",
+  "active": "de342f036e365cce",
   "lastOpenFiles": [
+    "Principal Component Analysis PCA.md",
     "Machine learning.md",
+    "K means clustering.md",
+    "Hierarchical Clustering in Machine Learning.md",
+    "Pasted image 20251204135502.png",
     "naive bayes classifiers.md",
     "Decision tree.md",
     "Perceptron.md",
@@ -273,7 +236,6 @@
     "Pasted image 20251113152214.png",
     "image-url.md",
     "images/Screenshot 2025-11-12 210053.png",
-    "images/Screenshot 2025-11-12 210453.png",
-    "images/Screenshot 2025-11-12 210103.png"
+    "images/Screenshot 2025-11-12 210453.png"
   ]
 }
