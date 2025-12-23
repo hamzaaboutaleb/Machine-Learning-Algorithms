@@ -1,3 +1,6 @@
 {
-  "spellcheck": false
+  "spellcheck": false,
+  "attachmentFolderPath": "images",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
 }

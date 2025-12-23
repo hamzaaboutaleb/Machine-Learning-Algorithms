@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f514a755c78146f5",
+            "id": "8e4346dde975b7c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "Machine learning"
             }
-          },
-          {
-            "id": "de342f036e365cce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Principal Component Analysis PCA.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Principal Component Analysis PCA"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,11 +184,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "de342f036e365cce",
+  "active": "8e4346dde975b7c9",
   "lastOpenFiles": [
-    "Principal Component Analysis PCA.md",
+    "Linear regression.md",
     "Machine learning.md",
+    "images/Pasted image 20251223123423.png",
+    "Pasted image 20251223123007.png",
+    "Pasted image 20251223123001.png",
+    "Data science - questions with no answers.md",
+    "Lasso Regression.md",
+    "questions.md",
+    "personnal",
+    "Untitled 2.md",
+    "SVM.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Ridge regression.md",
+    "Data Science Interview Questions and Answers.md",
     "K means clustering.md",
+    "Principal Component Analysis PCA.md",
     "Hierarchical Clustering in Machine Learning.md",
     "Pasted image 20251204135502.png",
     "naive bayes classifiers.md",
@@ -211,7 +210,6 @@
     "Perceptron.md",
     "interview questions/Probability and statistics interview questions.md",
     "Pasted image 20251203151504.png",
-    "Linear regression.md",
     "checklist machine learning.md",
     "Pasted image 20251130212909.png",
     "interview questions",
@@ -223,19 +221,12 @@
     "Cloud/Cloud azure interview questions.md",
     "Cloud",
     "knn (K nearest neighbors).md",
-    "SVM.md",
-    "Steps for a good machine learning project.md",
-    "A good presentation points.md",
     "Pasted image 20251113200435.png",
     "images/659809c7531ac2845a272536_image4_11zon_d6c6352c9b.avif",
     "images/Non confirmé 537539.crdownload",
     "images/659809bf531ac2845a27252e_image21_11zon_b29a6e7ebf.avif",
     "images/Non confirmé 888505.crdownload",
     "659809bf531ac2845a27252e_image21_11zon_b29a6e7ebf.avif",
-    "Untitled.base",
-    "Pasted image 20251113152214.png",
-    "image-url.md",
-    "images/Screenshot 2025-11-12 210053.png",
-    "images/Screenshot 2025-11-12 210453.png"
+    "Untitled.base"
   ]
 }
